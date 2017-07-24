@@ -21,4 +21,8 @@ class Photograph
     @photo[:name]
   end
 
+  def year
+    @photo[:year]
+  end
+
 end
