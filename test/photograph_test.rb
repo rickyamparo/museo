@@ -17,7 +17,7 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_an_id
-    photo = Photograph.new({
+    photo = Photograph.new({id: 1,
                             name: "Rue Mouffetard, Paris (Boy with Bottles)",
                             artist_id: 4,
                             museum_id: 2,
@@ -28,7 +28,7 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_an_artist_id
-    photo = Photograph.new({
+    photo = Photograph.new({id: 1,
                             name: "Rue Mouffetard, Paris (Boy with Bottles)",
                             artist_id: 4,
                             museum_id: 2,
@@ -39,7 +39,7 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_a_museum_id
-    photo = Photograph.new({
+    photo = Photograph.new({id: 1,
                             name: "Rue Mouffetard, Paris (Boy with Bottles)",
                             artist_id: 4,
                             museum_id: 2,
@@ -50,7 +50,7 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_a_name
-    photo = Photograph.new({
+    photo = Photograph.new({id: 1,
                             name: "Rue Mouffetard, Paris (Boy with Bottles)",
                             artist_id: 4,
                             museum_id: 2,
@@ -61,7 +61,7 @@ class PhotographTest < Minitest::Test
   end
 
   def test_it_has_a_year
-    photo = Photograph.new({
+    photo = Photograph.new({id: 1,
                             name: "Rue Mouffetard, Paris (Boy with Bottles)",
                             artist_id: 4,
                             museum_id: 2,

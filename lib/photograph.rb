@@ -2,11 +2,10 @@ require 'pry'
 
 class Photograph
 
-  attr_reader :photo, :id
+  attr_reader :photo
 
   def initialize(photo)
     @photo = photo
-    @id = 1
   end
 
   def artist_id
@@ -23,6 +22,10 @@ class Photograph
 
   def year
     @photo[:year]
+  end
+
+  def id
+    @photo[:id]
   end
 
 end
