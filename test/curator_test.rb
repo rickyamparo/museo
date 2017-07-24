@@ -17,4 +17,10 @@ class CuratorTest < Minitest::Test
     assert_equal [], curator.artists
   end
 
+  def test_it_starts_with_no_museum
+    curator = Curator.new
+
+    assert_equal [], curator.museums
+  end
+  
 end
