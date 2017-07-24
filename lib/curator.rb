@@ -20,6 +20,9 @@ attr_reader :artists, :museums, :photographs
   end
 
   def add_artist(artist)
+    if artist[:id] == nil
+      artist[:id] = 1
+    end
     @artists << Artist.new(artist)
   end
 
