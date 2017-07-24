@@ -1,3 +1,4 @@
+require 'pry'
 require 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
@@ -43,6 +44,14 @@ class CuratorTest < Minitest::Test
     curator.add_museum({name: "MoMA"})
 
     assert_equal 1, curator.museums.count
+  end
+
+  def test_museums_have_id_numbers
+    curator = Curator.new
+
+    curator.add_museum({name: "MoMA"})
+
+    assert_equal 1, curator.museums.first.id
   end
 
 end
