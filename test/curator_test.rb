@@ -22,5 +22,27 @@ class CuratorTest < Minitest::Test
 
     assert_equal [], curator.museums
   end
-  
+
+  def test_it_starts_with_no_photographs
+    curator = Curator.new
+
+    assert_equal [], curator.photographs
+  end
+
+  def test_it_can_add_museums
+    curator = Curator.new
+
+    curator.add_museum({name: "MoMA"})
+
+    assert_instance_of Museum, curator.museums[0]
+  end
+
+  def test_it_has_one_museum
+    curator = Curator.new
+
+    curator.add_museum({name: "MoMA"})
+
+    assert_equal 1, curator.museums.count
+  end
+
 end
