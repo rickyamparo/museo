@@ -1,4 +1,6 @@
 require "./lib/museum"
+require "./lib/artist"
+
 
 class Curator
 
@@ -15,6 +17,10 @@ attr_reader :artists, :museums, :photographs
       museum[:id] = 1
     end
     @museums << Museum.new(museum)
+  end
+
+  def add_artist(artist)
+    @artists << Artist.new(artist)
   end
 
 end
